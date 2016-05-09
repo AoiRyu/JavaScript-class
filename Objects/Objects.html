@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>JS var</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Objects</h1>
+    <h2>Introducing Objects</h2>
+    <h3>JavaScript Objects</h3>
+    <p>Syntax:
+        <br> var person = {
+        <br> name: 'John', age: 31;
+        <br> favColor: 'green'
+        <br>};
+    </p>
+    <h3>Object Porperties</h3>
+    <p>Syntax:
+        <br> objectName.propertyName
+        <br> or
+        <br> objectName['propertyName']
+    </p>
+    <p>Syntax:
+        <br> var person = {
+        <br> name: 'John', age: 21
+        <br>};
+        <br>var x = person.age;
+        <br>var y = person['age'];
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            var course = {
+                name: 'Marcia',
+                lesson: 41
+            };
+            document.write(course.name + ' ' + course.lesson);
+        </script>
+    </p>
+    <h2>Creating Tour Own Objects</h2>
+    <h3>The objects Constructor</h3>
+    <p>--CODE--
+        <BR> objetos unitaleral
+        <br>
+        <script>
+            var person = {
+                name: 'Ricardo',
+                age: 19,
+                colorFav: 'black'
+            };
+        </script>
+    </p>
+    <p>--CODE--
+        <br> objetos construtor
+        <script>
+            function person(name, age, colorFav) {
+                this.name = name;
+                this.age = age;
+                this.colorFav = colorFav;
+            }
+        </script>
+    </p>
+    <h3>Creating Objects</h3>
+
+    <p>--CODE--
+        <br>
+        <script>
+            function person(name, age, colorFav) {
+                this.name = name;
+                this.age = age;
+                this.colorFav = colorFav;
+            }
+            var p1 = new person('John', 34, 'red');
+            var p2 = new person('Marcia', 54, 'blue');
+            document.write(p1.name + p1.age + ' <br>');
+            document.write(p2.name);
+        </script>
+    </p>
+    <h2>Object Initialization</h2>
+</body>
+
+</html>

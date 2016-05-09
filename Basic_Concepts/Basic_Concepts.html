@@ -1,0 +1,340 @@
+<html>
+
+<head>
+    <title>JS var</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>BASIC CONCEPTS</h1>
+
+    <h2>Data Types</h2>
+    <ul>
+        <li>Numbers</li>
+        <li>Strings</li>
+        <li>Arrays</li>
+    </ul>
+    <h3>Floating-Point Numbers</h3>
+    <p>--CODE--</p>
+    <script>
+        var price = 55.55;
+        document.write(price);
+    </script>
+    <h3>String 1.0</h3>
+    <p>--CODE--</p>
+    <script>
+        var name = 'John';
+        document.write('My name is ' + name);
+    </script>
+    <h3>String 1.1</h3>
+    <p>--CODE--</p>
+    <script>
+        var sayhello = "Hello world.\'I am a JavaScript programmer.\'";
+        document.write(sayhello);
+    </script>
+    <table>
+        <tr>
+            <td>Code</td>
+            <td>Outputs</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>\'</td>
+            <td>single quote</td>
+            <td>
+                <script>
+                    document.write('Laranja means \'arroz\'');
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\"</td>
+            <td>double quotes</td>
+            <td>
+                <script>
+                    document.write('Laranja means \"arroz\"');
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\\</td>
+            <td>blackslash</td>
+            <td>
+                <script>
+                    document.write('C:\\Ricardo\\desktop\\');
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\n</td>
+            <td>new line</td>
+            <td>
+                <script>
+                    document.write('Laranja mix \n nothing')
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\r</td>
+            <td>carriage return</td>
+            <td>
+                <script>
+                    document.write('Laranja mix \r nothing')
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\t</td>
+            <td>tab</td>
+            <td>
+                <script>
+                    document.write('Laranja mix \t nothing')
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\b</td>
+            <td>backspace</td>
+            <td>
+                <script>
+                    document.write('Laranja mix \b nothing')
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>\f</td>
+            <td>form feed</td>
+            <td>
+                <script>
+                    document.write('Laranja mix \f nothing')
+                </script>
+            </td>
+        </tr>
+    </table>
+    <h2>Booleans</h2>
+    <script>
+        var x = true;
+        var y = false;
+        document.write('Angela é homem ' + y + '\nRicardo é home ' + x);
+    </script>
+
+    <h2> Arithmetic Operators</h2>
+    <table>
+        <tr>
+            <td>Operator</td>
+            <td>Description</td>
+            <td>Is equivalent to</td>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Addiction</td>
+            <td>25 + 23 = 48</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>25 - 23 = 2</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>10 * 3 = 30</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>9 / 3 = 3</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus</td>
+            <td>10 % 3 = 1</td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td>Increment</td>
+            <td>var a = 10; a++; Now a = 11</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>Decrement</td>
+            <td>var a = 10; a--; Now a = 9</td>
+        </tr>
+    </table>
+    <h2> Increment & Decrement</h2>
+    <table>
+        <tr>
+            <td>Operator</td>
+            <td>Description</td>
+            <td>Example</td>
+            <td>Result</td>
+        </tr>
+        <tr>
+            <td>var++</td>
+            <td>Post Increment</td>
+            <td>var a = 0,
+                <br> b = 10;
+                <br>var a = b++;</td>
+            <td>a = 10
+                <br>b = 11</td>
+        </tr>
+        <tr>
+            <td>++var</td>
+            <td>Pré Increment</td>
+            <td>var a = 0,
+                <br> b = 10;
+                <br>var a = ++b;</td>
+            <td>a = 11
+                <br>b = 11</td>
+        </tr>
+        <tr>
+            <td>var--</td>
+            <td>Post Decrement</td>
+            <td>var a = 0,
+                <br> b = 10;
+                <br>var a = b--;</td>
+            <td>a = 10
+                <br> b = 9</td>
+        </tr>
+        <tr>
+            <td>--var</td>
+            <td>Pré Decrement</td>
+            <td>var a = 0,
+                <br> b = 10;
+                <br> var a = --b;</td>
+            <td>a = 9
+                <br> b = 9</td>
+        </tr>
+    </table>
+
+    <h2>Assignment Operators</h2>
+
+    <table>
+        <tr>
+            <td>Operator</td>
+            <td>Exemple</td>
+            <td>Is equivalent to</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>x = y</td>
+            <td>x = y</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+        </tr>
+    </table>
+    <h2>Comparison Operators</h2>
+    <table>
+        <tr>
+            <td>Operator</td>
+            <td>Description</td>
+            <td>Example</td>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Equal to</td>
+            <td>5 == 10 false</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>Identical (equal and of same type)</td>
+            <td>5 === 10 false</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not equal to</td>
+            <td>5 != 10 true</td>
+        </tr>
+        <tr>
+            <td>!==</td>
+            <td>Not identical</td>
+            <td>10 !== 10 false</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Greater than</td>
+            <td>4 > 5 false</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Greater than or equals to</td>
+            <td>6 >= 10 false</td>
+        </tr>
+        <tr>
+            <td> &lt; </td>
+            <td>Less than</td>
+            <td>3
+                < 10 true </td>
+        </tr>
+        <tr>
+            <td> &lt;= </td>
+            <td>Less than</td>
+            <td>3
+                <=2 false </td>
+        </tr>
+    </table>
+
+    <h2>Logical Operators</h2>
+    <table>
+        <tr>
+            <td>&&</td>
+            <td>Returns true, if both operands are true</td>
+        </tr>
+        <tr>
+            <td>||</td>
+            <td>Returns true, if one of the operands are true</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>Returns true, if the operand is false, and false, if the operand is true</td>
+        </tr>
+    </table>
+
+    <h3>Conditional (Ternary) Operator</h3>
+    <p>Variabel = (condition) ? value1: value2</p>
+    <p> For example: var IsAdult = (age
+        < 18)? "Too young": "Old enough";</p>
+            <p>--CODE--
+                <br>
+                <script type="text/javascript">
+                    var IsAdult = 12;
+                    var compare = (IsAdult < 18) ? "Too Young" : "Old enough";
+                    document.write(compare);
+                </script>
+            </p>
+            <h2>String Operators</h2>
+            <p> CODE
+                <br>
+                <script type="text/javascript">
+                    var a = 'JavaScript';
+                    var b = ' Não é Java';
+                    document.write(a + b);
+                </script>
+            </p>
+
+</body>
+
+</html>

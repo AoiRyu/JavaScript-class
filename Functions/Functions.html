@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>JS var</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Functions</h1>
+    <h2>User-Defined Functions</h2>
+
+    <h3>JavaScript Functions</h3>
+    <p>Function is a block of code designed to perfom a particular task</p>
+    <h3>Defining a Function</h3>
+    <p>function name(){ code to be executed }</p>
+    <h3>Calling a Function</h3>
+    <p>function myFunc(){
+        <br>alert('Calling a function')
+        <br>}
+        <br> myFunc();</p>
+    <h3>Calling FunctionS</h3>
+    <p>
+        function myFuns{
+        <br>alert('Alert Box');
+        <br>}
+        <br> myFuns(); //'Alert Box'
+        <br>//Some block code
+        <br> myFuns();
+        <br> //'Alert box'
+    </p>
+    <h2>Functions Parameters</h2>
+    <h3>Functions Parameters</h3>
+    <p>Syntax
+        <br> functionName(param1, param2, param3){ // some code}
+    </p>
+    <h3>Using Parameters</h3>
+    <p>
+        function sayHello(name){
+        <br> alert ('Hi, ' + name);
+        <br>}
+        <br>sayHello('David');
+        <br>//Alerts('Hi, David');
+    </p>
+    <p>You can pass differents parameter values to one single function
+        <br>sayHello('Hiago');
+        <br>sayHello('Carl');
+        <br>sayHello('John');
+    </p>
+
+    <h2>Using Multiple Parameter With Functions</h2>
+    <p>Syntax: function name(x,y){ //some code }</p>
+    <p>Syntax: function sayhello(name,age){
+        <br> document.write(name + ' is ' + age + ' year old');
+        <br>}</p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            function sayhello(name, age) {
+                document.write(name + ' is ' + age + ' years old');
+            }
+            sayhello('Ricardo', 12);
+        </script>
+    </p>
+    <h2>The returns Statement</h2>
+    <p>Syntax:
+        <br> function name(a,b){
+        <br> return a * b;
+        <br>}
+        <br> var x = name(4,5);
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            function mult(x, y) {
+                return x * y;
+            }
+            var w = mult(4, 5);
+            document.write(w + '<br>');
+            document.write(mult(5, 5));
+        </script>
+    </p>
+    <h2>Alert, Prompt, Confirm</h2>
+    <p>--CODE--
+        <br>
+<!--
+<script>
+    var result = confirm('Do you like?');
+    if (result == true) {
+        document.write('Okaaay');
+    } else {
+        document.write('Nooooooo');
+    }
+</script>-->
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <title>JS var</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Conditionals and Loops</h1>
+    <h2>The if Statement</h2>
+    <p>
+        if (condition){ statements }
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var a = 12;
+            var b = 2
+            if (a > b) {
+                document.write("JS is easy");
+            }
+        </script>
+    </p>
+    <h2>The else Statement</h2>
+    <p>
+        if (expression){ // some code }
+        <br> else { // somo code }
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var a = 12;
+            var b = 22
+            if (a > b) {
+                document.write('JS is easy');
+            } else {
+                document.write('JS is hard');
+            }
+        </script>
+    </p>
+    <h2>The else if Statement</h2>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var a = 22;
+            var b = 22
+            if (a > b) {
+                document.write('JS is easy');
+            } else if (b < a) {
+                document.write('JS is hard');
+            } else {
+                document.write('They are equals');
+            }
+        </script>
+    </p>
+    <h2>The switch Statement</h2>
+    <p>switch(expression){
+        <br> case n:
+        <br> statements
+        <br> break;
+        <br> case n:
+        <br> statements
+        <br> break;
+        <br> default:
+        <br> statements
+        <br> }
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var day = 2
+            switch (day) {
+            case 1:
+                document.write('Monday')
+                break;
+            case 2:
+                document.write('Tuesday')
+                break;
+            case 3:
+                document.write('Wednesday')
+                break;
+            default:
+                document.write('Another day')
+            }
+        </script>
+    </p>
+    <h2>The FOR Loop</h2>
+    <p>
+        for (statement 1; statement 2; statement 3){ code block to be executed }
+    </p>
+    <p> --CODE--
+        <br>
+        <script type="text/javascript">
+            for (i = 1; i <= 4; i++) {
+                document.write(i + '<br>');
+            }
+        </script>
+        <script>
+            for (i = 1, text = ""; i <= 3; i++) {
+                document.write(i + '<br>');
+            }
+        </script>
+        <script>
+            var i = 1;
+            for (; i <= 4;) {
+                document.write(i + '<br>');
+                i++;
+            }
+        </script>
+    </p>
+    <h2>The While Loop</h2>
+    <p>
+        while (condition){ code block }
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var i = 0;
+            while (i < 5) {
+                document.write(i + '<br>');
+                i++;
+            }
+        </script>
+    </p>
+    <h2>The Do....While Loop</h2>
+    <p>
+        do{
+        <br> code block
+        <br>}
+        <br> while (condition);
+    </p>
+    <p>--CODE--
+        <br>
+        <script type="text/javascript">
+            var i = 20;
+            do {
+                document.write(i + '<br>');
+                i++
+            }
+            while (i <= 25);
+        </script>
+    </p>
+    <h2>Break & Continue</h2>
+    <h3>Break</h3>
+    <p>--CODE--</p>
+    <script>
+        for (i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break;
+            }
+            document.write(i + '<br>');
+        }
+    </script>
+    <h3>Continue</h3>
+    <p>--CODE--</p>
+    <script>
+        for (i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            document.write(i + '<br>');
+        }
+    </script>
+
+</body>
+
+</html>
