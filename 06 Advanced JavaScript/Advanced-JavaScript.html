@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced JavaScript</title>
+</head>
+
+<body>
+    <h1>Advanced JavaScript</h1>
+    <h2>The Document Object Model (DOM)</h2>
+    <h3>What is  the DOM?</h3>
+    <p>DOM defines the logical structure of the page</p>
+    <p>The HTML DOM is a standerd for how to get, change, add, or delete HTML elements</p>
+
+    <p>Syntax test:
+        <br> document.body.innerHTML = 'Some text';
+    </p>
+    <p>You star with this property and you can be used to get or change any HTML element</p>
+    <p>DOM structure is:
+        <br> document ~> html ~> head/body
+        <br> head ~> title
+        <br> body ~> h1/a
+    </p>
+    <p>As you can see, the DOM describes the relationships of HTML elementes <b>(nodes)</b>. Element objects can have <b>child</b> nodes. Elements on the same node tree level are called <b>siblings</b></p>
+    <p>In the example above tag H1 and A are <b>siblings</b>. TITLE is a <b>child</b> of HEAD, and so on</p>
+
+    <h3> Node Relationship</h3>
+    <p>DOM represents a document as a tree which is made up of parent-child relationships. A parent can have one or many child nodes.</p>
+    <p>The basic HTML structure.
+        <br>
+        <code>&lt;html&gt;</code>
+        <br>
+        <code>&lt;head&gt;</code>
+        <br>
+        <code>&lt;title&gt; TITULO</code>
+        <code>&lt;/title&gt;</code>
+        <br>
+        <code>&lt;/head&gt;</code>
+        <br>
+        <code>&lt;body&gt;</code>
+        <BR> THE BODY
+        <br>
+        <code>&lt;/body&gt;</code>
+        <br>
+        <code>&lt;/html&gt;</code>
+        <br>
+    </p>
+    <p>The text below demonstrates the relationship between the nodes.</p>
+    <p>Root elemente <code>&lt;html&gt;</code> => last child ~> Element <code>&lt;body&gt;</code> and first child ~> Element <code>&lt;head&gt;</code>
+        <br> Elemente <code>&lt;head&gt;</code> ~> parentNode ~> <code>&lt;html&gt;</code> and ~> nextSibling ~><code>&lt;body&gt;</code>
+        <br> Elemente <code>&lt;body&gt;</code> ~> previsiousSibling ~><code>&lt;head&gt;</code>
+    </p>
+    <p>well, let's understand better:
+    </p>
+    <ul>
+        <li> html - the root node, has 2 children (head and body) and no parents;</li>
+        <li> head - the first child of html, has one child title, and one parent html;</li>
+        <li> title - has one parent head; </li>
+        <li> body - is the last child of html, and has no children</li>
+    </ul>
+    <h2>The DOM - Unscrrewing the Document</h2>
+    <h3>Working with DOM</h3>
+    <p>In DOM, all HTML element are defined as objects.</p>
+    <ul>
+        <li>Property - is a value that you can get or set</li>
+        <li>Method - is an action that you can do</li>
+    </ul>
+    <p>The most widely used way to access an HTML element is through it's <b>id</b>.</p>
+    <p></p>
+</body>
+
+</html>

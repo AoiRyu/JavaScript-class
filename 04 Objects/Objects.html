@@ -78,6 +78,77 @@
         </script>
     </p>
     <h2>Object Initialization</h2>
+    <h3>Object Initialization</h3>
+    <p>
+        var John = { name: 'John', age: 32};
+        <br> var Maria = { name: 'Maria', age: 21};
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            var Rone = {
+                name: 'Rone',
+                age: 32
+            };
+            var Block = {
+                name: 'Block',
+                age: 21
+            };
+            document.write(Rone.age);
+        </script>
+    </p>
+    <h2>Adding Methods</h2>
+    <h3>Methods</h3>
+    <p>Syntax to create an object method:
+        <br> methodName : function() { code lines }
+    </p>
+    <p>Syntax to access:
+        <br> objectName.methodName </p>
+    <p>--CODE--
+        <br>
+        <script>
+            function human(name, age) {
+                this.name = name;
+                this.age = age;
+                this.changeName = function (name) {
+                    this.name = name;
+                }
+            }
+            var d = new human('Dog', 43);
+            d.changeName('Koly');
+            document.write(d.name);
+        </script>
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            function l(name, age) {
+                this.name = name;
+                this.age = age;
+                this.yearOfBirth = bornYear;
+            }
+
+            function bornYear() {
+                return 2015 - this.age;
+            }
+        </script>
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            function l(name, age) {
+                this.name = name;
+                this.age = age;
+                this.yearOfBirth = bornYear;
+            }
+
+            function bornYear() {
+                return 2016 - this.age;
+            }
+            var g = new l('Lola', 16);
+            document.write(g.yearOfBirth());
+        </script>
+    </p>
 </body>
 
 </html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS VAR</title>
+</head>
+
+<body>
+    <h1>Core Objects</h1>
+    <h2>Arrays</h2>
+    <h3>JavaScript Arrays</h3>
+    <p>Syntax:
+        <br> var courses = new Array('Html','CSS', 'PHP');</p>
+    <h3>Accessing an Array</h3>
+    <p>Syntax:
+        <br> var courses = new Array('HTML','CSS','PHP');
+        <br> var courses = courses[0]; //html
+        <br> courses[1] = 'C++'; // changed the second element
+    </p>
+    <h3>Accessing an Array Part. 2</h3>
+    <p>--CODE--
+        <br>
+        <script>
+            var d = new Array('HTML', 'PHP', 'JS');
+            document.write(d[12] +
+                '<BR>'); // this are blank
+            document.write(d[1]); // will return PHP
+        </script>
+    </p>
+    <h2>Other Ways to Create Arrays</h2>
+    <h3>Creating Arrays</h3>
+    <p>Syntax:
+        <br> var courses = new Array(3);
+        <br> courses[0] = 'JS';
+        <br> courses[1] = 'HTML';
+        <br> courses[2] = 'PHP';
+    </p>
+    <h3>Creating Arrays Part. 2</h3>
+    <p>Syntax:
+        <br> var courses = new Array();
+        <br> courses[0] = 'JS';
+        <br> courses[1] = 'HTML';
+        <br> courses[2] = 'PHP';
+        <br> courses[3] = 'CSS';
+    </p>
+    <p> or </p>
+    <p>Syntax:
+        <br> var courses = ['HTML','JS','CSS','PHP' ];
+    </p>
+    <h2>Arrays Properties & Methods</h2>
+    <h3>The Length Property</h3>
+    <p>Syntax:
+        <br> var courses = ['HTML','JS','CSS','PHP'];
+        <br> document.write(courses.length);
+        <br> //outputs 4
+    </p>
+    <h3>Combining Arrays</h3>
+    <p>Syntax:
+        <br> var c1 = ['HTML','CSS'];
+        <br> var c2 = ['JAVA','C++'];
+        <br> var courses = c1.concat(c2);
+    </p>
+    <p>The courses array that results contains 4 elementes (HTML, CSS, JAVA, C++)</p>
+
+    <h2>Associative Arrays</h2>
+    <h3>Associative Arrays</h3>
+    <p>syntax: var person = [];
+        <br> person['name']= 'Pedro';
+        <br>person['age'] = 90;
+        <br> document.write(person['age']);
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            var person = [];
+            person['name'] = 'Pedro';
+            person['age'] = 90;
+            document.write(person['age']);
+        </script>
+    </p>
+    <h2>The Math Object</h2>
+    <h3>The math Object</h3>
+    <table>
+        <tr>
+            <td>Property</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>Euler's constant</td>
+        </tr>
+        <tr>
+            <td>LN2</td>
+            <td>Natural Log of the value 2</td>
+        </tr>
+        <tr>
+            <td>LN10</td>
+            <td>Natural log of the value 10</td>
+        </tr>
+        <tr>
+            <td>LOG2E</td>
+            <td>The base 2 log of Eyler's constant (E)</td>
+        </tr>
+        <tr>
+            <td>LOG10E</td>
+            <td>The base 10 log of Eyler's constant (E)</td>
+        </tr>
+        <tr>
+            <td>PI</td>
+            <td>Returns the constant PI</td>
+        </tr>
+    </table>
+    <p>--CODE--
+        <br>
+        <script>
+            document.write(Math.PI);
+        </script>
+    </p>
+    <h3>Math Objects Methods</h3>
+    <table>
+        <tr>
+            <td>Property</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>abs(x)</td>
+            <td>Returns the absolute value of x</td>
+        </tr>
+        <tr>
+            <td>acos(x)</td>
+            <td>Returns the arccosine of x, in radians</td>
+        </tr>
+        <tr>
+            <td>asin(x)</td>
+            <td>Returns the arcsine of x, in radians</td>
+        </tr>
+        <tr>
+            <td>atan(x)</td>
+            <td>Returns the arctangent of x as a numeric value between - PI/2 and PI/2 radians</td>
+        </tr>
+        <tr>
+            <td>atan2(x,y)</td>
+            <td>Returns the arctangent of the quotient of its arguments</td>
+        </tr>
+        <tr>
+            <td>ceil(x)</td>
+            <td>Returns x, rounded upwards to the nearest integer</td>
+        </tr>
+        <tr>
+            <td>cos(x)</td>
+            <td>Returns the cosine of x (x is in radians)</td>
+        </tr>
+        <tr>
+            <td>exp(x)</td>
+            <td>Returns the value of E^x</td>
+        </tr>
+        <tr>
+            <td>floor(x)</td>
+            <td>Returns x, rounded downwards to the nearest integer</td>
+        </tr>
+        <tr>
+            <td>log(x)</td>
+            <td>Returns the natural logarithm (base E) of x</td>
+        </tr>
+        <tr>
+            <td>max(x,y,z,w...n)</td>
+            <td>Returns the number with the highest value</td>
+        </tr>
+        <tr>
+            <td>min(x,y,z,w...n)</td>
+            <td>Returns the number with the lowest value</td>
+        </tr>
+        <tr>
+            <td>pow(x,y)</td>
+            <td>Returns the value of x to the power of y</td>
+        </tr>
+        <tr>
+            <td>random(x)</td>
+            <td>Returns a random number between 0 and 1</td>
+        </tr>
+        <tr>
+            <td>round(x)</td>
+            <td>Round x to the nearest integer</td>
+        </tr>
+        <tr>
+            <td>sin(x)</td>
+            <td>Returns the sine of x (x is int radians)</td>
+        </tr>
+        <tr>
+            <td>sqrt(x)</td>
+            <td>Returns the square root of x</td>
+        </tr>
+        <tr>
+            <td>tan(x)</td>
+            <td>Returns the tangent of an angle</td>
+        </tr>
+    </table>
+    <h3>The Math Object</h3>
+    <p>
+        --CODE-- (the prompt showing)
+        <br>
+        <script>
+            var n = document.write('Digite um numero: ');
+            var anwser = Math.sqrt(n);
+            document.write('The square root of ' + n + ' is ' + anwser);
+        </script>
+    </p>
+    <h2>The Date Object</h2>
+    <h3>setInterval</h3>
+    <p>Syntax example:
+        <br> fuction myAlert() { alert('HI'); } setInterval(myAlert,3000);
+    </p>
+    <h3>The Date Object</h3>
+    <p>Syntax:
+        <br> var d = new Date();
+        <br> new Date(milliseconds)
+        <br> new Date(dateString)
+        <br> new Date(year,month,day,hours,minutes,seconds,millisenconds)
+    </p>
+    <p>--CODE--
+        <br>
+        <script>
+            var d1 = new Date(86400000);
+            var d2 = new Date('January 2, 2016, 10:42:00');
+            var d3 = new Date(88, 5, 11, 11, 42, 0, 0);
+            document.write(d3 + '<br>');
+            document.write(d2 + '<br>');
+            document.write(d1 + '<br>');
+        </script>
+    </p>
+    <h3>Date Methods</h3>
+    <table>
+        <tr>
+            <td>Method</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>getFullYear()</td>
+            <td>gets the year</td>
+        </tr>
+        <tr>
+            <td>getMonth()</td>
+            <td>gets the Month </td>
+        </tr>
+        <tr>
+            <td>getDate()</td>
+            <td>gets the day of the month </td>
+        </tr>
+        <tr>
+            <td>getDay()</td>
+            <td>gets the day of the week </td>
+        </tr>
+        <tr>
+            <td>getHours()</td>
+            <td>gets the hour </td>
+        </tr>
+        <tr>
+            <td>getMinute()</td>
+            <td>gets the minutes </td>
+        </tr>
+        <tr>
+            <td>getSeconds()</td>
+            <td>gets the seconds </td>
+        </tr>
+        <tr>
+            <td>getMilliseconds()</td>
+            <td>gets the milliseconds</td>
+        </tr>
+    </table>
+    <p>--CODE--
+        <br>
+        <script>
+            function printTime() {
+                var d = new Date();
+                var h = d.getHours();
+                var min = d.getMinutes();
+                var secs = d.getSeconds();
+                //                document.body.innerHTML = h + ':' + min + ':' + secs;
+            }
+            var g = new Date();
+            document.write(g.getFullYear() + ' year <br>');
+            document.write(g.getMonth() + ' month <br>');
+            document.write(g.getDate() + ' week <br>');
+            document.write(g.getDay() + ' day <br>');
+            document.write(g.getHours() + ' hour <br>');
+            document.write(g.getMinutes() + ' minutes <br>');
+            document.write(g.getSeconds() + ' seconds <br>');
+            document.write(g.getMilliseconds() + ' milliseconds<br>');
+            document.write(printTime());
+        </script>
+        <br> THE SCRIPT HAVE A CONMENT BECAUSE THE CLOSE ALL THE HTML
+    </p>
+</body>
+
+</html>
